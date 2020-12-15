@@ -16,21 +16,21 @@ public class TasksApplication {
         SpringApplication.run(TasksApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner(TaskService taskService) {
-        return args -> {
-            taskService.save(new Task(1L, "Create Spring Boot Application", LocalDate.now(), true));
-            taskService.save(new Task(2L, "Create Spring Project packages", LocalDate.now(), false));
-            taskService.save(new Task(3L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(4L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(5L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(6L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(7L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(8L, "Create Spring Boot Application", LocalDate.now(), false));
-            taskService.save(new Task(9L, "Create Spring Boot Application", LocalDate.now(), false));
-
-        };
-    }
+//    @Bean
+//    CommandLineRunner runner(TaskService taskService) {
+//        return args -> {
+//            taskService.save(new Task(1L, "Create Spring Boot Application", LocalDate.now(), true));
+//            taskService.save(new Task(2L, "Create Spring Project packages", LocalDate.now(), false));
+//            taskService.save(new Task(3L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(4L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(5L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(6L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(7L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(8L, "Create Spring Boot Application", LocalDate.now(), false));
+//            taskService.save(new Task(9L, "Create Spring Boot Application", LocalDate.now(), false));
+//
+//        };
+//    }
 
 }
 
