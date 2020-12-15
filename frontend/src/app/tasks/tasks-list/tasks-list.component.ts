@@ -24,6 +24,11 @@ export class TasksListComponent implements OnInit {
         }).catch((error) => {
             console.log(error);
         });
+
+        this.taskService.onTaskAdded.subscribe(
+            (task: Task) => this.tasks.push(task)
+            );
+
     }
 
   getDueDateLabel(task:Task) {
