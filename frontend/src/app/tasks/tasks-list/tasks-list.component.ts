@@ -14,21 +14,26 @@ export class TasksListComponent implements OnInit {
   constructor(private taskService: TaskService) { }
 
   ngOnInit()  {
-      return this.taskService.getTasks().subscribe(
-          (tasks: any[]) => {
-              this.tasks = tasks
-          },
-          (error) => console.log(error)
-      )
+      this.loadTasks();
   }
 
+    loadTasks() {
+        this.taskService.getTasks().then((response) => {
+            console.log(response);
+            this.tasks = JSON.parse(JSON.stringify(response)); //if you server returns json data
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+
   getDueDateLabel(task:Task) {
-      return task.completed ? 'badge-success' : 'badge-primary';
+      return task.completed ? 'badge-success' : 'badge-danger';
   }
 
   onTaskChange(event, task) {
       // this.taskService.saveTask(task, event.target.checked).subscribe();
       console.log('Task has changed');
+
   }
 
 }

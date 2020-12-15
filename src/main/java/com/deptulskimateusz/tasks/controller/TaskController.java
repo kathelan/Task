@@ -4,6 +4,7 @@ import com.deptulskimateusz.tasks.domain.Task;
 import com.deptulskimateusz.tasks.service.TaskService;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
