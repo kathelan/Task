@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.deptulskimateusz"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "tasks",
+    "packageName": "com.deptulskimateusz",
+    "packageFolder": "com/deptulskimateusz",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTI5OWE3MDRkMDg1MmMzZDhiZjJmYmFkYmQ0MTE1NWFjZDdlM2Y5YTY3NGM0Y2VlNThkMmVlOTBjMzkxMDAyYmQ1ZDBmZTllNDIyZGE0ZWI2NjdlZjA1M2FhM2I1NDRlNWM5OTcyZDU2NTM4ZGE5ZWZlNThkMjk4YWQwMzUzMWM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "cyborg",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1608103757342,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
