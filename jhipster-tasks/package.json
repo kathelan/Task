@@ -71,7 +71,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "postcss-loader": "3.0.0",
     "prettier": "2.1.2",
-    "rimraf": "3.0.2",
+    "rimraf": "^3.0.2",
     "sass": "1.26.9",
     "sass-loader": "8.0.2",
     "simple-progress-webpack-plugin": "1.1.2",
